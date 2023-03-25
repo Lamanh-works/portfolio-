@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lamanhwork</title>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 60px 80px 60px;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        border: 1px solid black;
+      }
+      h1 {
+        text-align: center;
+        line-height: 15px;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 25px;
+      }
+      p {
+        display: block;
+        margin: 20px 70px 20px 70px;
+        font-size: 16px;
+        text-align: justify;
+      }
+      hr {
+        margin: 20px 70px 20px 70px;
+        color: black;
+      }
+      .See-more {
+        text-decoration: none;
+        color: black;
+      }
+      button {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px auto 30px;
+        border: 1px solid #dfd3c3;
+        background: #d1c2b0;
+        color: black;
+        font-size: 14px;
+        line-height: 15px;
+        padding: 20px 30px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #fdfcfb;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .Marketing-Samples {
+        text-decoration: none;
+      }
+      .Design-Samples {
+        text-decoration: none;
+      }
+    </style>
+    <body>
+      <div class="container">
+        <h1>Lam Anh Nguyen</h1>
+        <h2>About me</h2>
+        <img
+          src="C:\Users\Shel\Pictures\IMG_20220616_143608.jpg"
+          alt="Fashion Portfolio"
+        />
+        <hr />
+        <p>
+          A Recent graduate with a Master in Fashion Design and Bussiness at
+          Raffles Milano. I am a highly motivated individual who believes in the
+          beauty of fashion lies in its ability to connect and bring out the joy
+          of individuals. I am excited to take on roles to help retain and
+          develop that beauty in the digitalized and sustainable direction that
+          the industry is heading.
+          <a
+            href="https://omitthenorm6.wixsite.com/fashionportfolio"
+            target="_blank"
+            class="See-more"
+          >
+            <strong> Check out my works! </strong>
+          </a>
+        </p>
+        <hr />
+        <a
+          href="https://online.updf.com/index/share/en-US?shareId=f3121cb1-643f-447f-b214-14e4f84a0aac"
+          target="_blank"
+          class="Marketing-Samples"
+          ><button>Fashion Marketing</button>
+        </a>
+        <a
+          href="https://omitthenorm6.wixsite.com/fashionportfolio"
+          target="_blank"
+          class="Design-Samples"
+          ><button>Fashion Design</button>
+        </a>
+        <button class="ContactMe">Contact Me</button>
+      </div>
+      <script>
+        function Contact() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+
+          alert(
+            "Thank you " +
+              name +
+              " ! We will be in touch soon, have a nice day."
+          );
+        }
+        let contactButton = document.querySelector(".ContactMe");
+        contactButton.addEventListener("click", Contact);
+      </script>
+    </body>
+  </head>
+</html>
